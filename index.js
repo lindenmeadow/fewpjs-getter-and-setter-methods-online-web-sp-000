@@ -16,4 +16,13 @@ class Circle {
   get area() {
     return Math.PI * Math.pow(this.radius, 2)
   }
+
+  set diameter(newDiameter) {
+      this.radius = newDiameter / 2
+  }
+
+  set circumference(newCircumference) {
+      this.radius = newCircumference / (2 * Math.PI)  
+  }
 }
+
